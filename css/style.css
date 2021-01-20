@@ -87,13 +87,14 @@
 }
 
 .welcome__btn-wrap {
-  border-radius: 4rem;
+  border-radius: 31px;
   padding: 3px;
   margin-top: 5rem;
   display: inline-block;
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  height: 62px;
 }
 .welcome__btn-wrap:hover .welcome__btn {
   background-color: rgba(255, 255, 255, 0.5);
@@ -109,7 +110,8 @@
   animation: rotate 3.5s linear infinite;
 }
 .welcome__btn-wrap .welcome__btn {
-  border-radius: 3.5rem;
+  border-radius: 27px;
+  height: 100%;
   background-color: #fff;
   text-align: center;
   display: inline-block;
@@ -117,8 +119,8 @@
 }
 .welcome__btn-wrap .welcome__btn .btn__text {
   font-size: 3.2rem;
-  line-height: 6rem;
-  margin: 0 3.5rem;
+  line-height: 54px;
+  margin: 0 4.5rem;
 }
 
 @keyframes rotate {
@@ -169,7 +171,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 40;
+  z-index: 90;
   text-align: center;
   transition: 0.5s;
   margin: -100vh auto;
@@ -213,7 +215,7 @@
 .form__input-wrap {
   max-width: 500px;
   width: 100%;
-  height: 60px;
+  height: 50px;
   border-radius: 30px;
   padding: 3px;
   position: relative;
@@ -275,7 +277,7 @@
 }
 .form__btn-wrap {
   margin: 50px auto 40px;
-  height: 60px;
+  height: 45px;
   border-radius: 30px;
   padding: 3px;
   overflow: hidden;
@@ -306,10 +308,10 @@
 .form-background {
   width: 0;
   height: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 30;
+  z-index: 80;
   transition: 0.3s;
 }
 .form-background.active {
@@ -643,12 +645,6 @@
   .header__menu.active {
     right: 0;
   }
-}
-/* Landscape phones and portrait tablets */
-@media screen and (max-width: 767px) {
-  .container--welcome {
-    text-align: center;
-  }
 
   .form__close {
     right: 30px;
@@ -659,6 +655,12 @@
 
   .close__trait {
     width: 35px;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px) {
+  .container--welcome {
+    text-align: center;
   }
 
   .body.lock {
@@ -683,6 +685,15 @@
   .header__burger.active {
     right: 0;
   }
+
+  .form__btn-wrap {
+    margin: 50px auto 0;
+  }
 }
 /* Portrait phones and smaller */
+@media screen and (max-width: 480px) {
+  .form__title {
+    margin-top: 15px;
+  }
+}
 /* Iphone 5 */
