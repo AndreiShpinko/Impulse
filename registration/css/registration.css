@@ -3,10 +3,6 @@
   overflow: hidden;
 }
 
-.main {
-  font-family: "Raleway", sans-serif;
-}
-
 .container {
   max-width: 1170px;
   width: 100%;
@@ -14,282 +10,94 @@
   padding: 0 20px;
 }
 
-.welcome {
-  min-height: 100vh;
-  position: relative;
+.main {
+  margin-top: 7rem;
 }
 
-.container--welcome {
-  z-index: 10;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.welcome__title {
-  font-size: 4.8rem;
-  color: #fff;
-}
-.welcome__title span {
-  background: linear-gradient(270deg, rgba(0, 0, 255, 0.8), rgba(255, 0, 0, 0.8));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
-}
-
-.welcome__subtitle {
-  font-size: 2rem;
-  line-height: 1.5em;
-  color: #fff;
-  margin-top: 5rem;
-  max-width: 900px;
-}
-
-.welcome__btn {
-  display: inline-block;
-  border-radius: 1em;
-  margin-top: 5rem;
-  font-size: 3rem;
-  line-height: 5rem;
-  background-color: #fff;
-  font-family: "Pacifico", cursive;
-  border: 2px solid #000;
-  letter-spacing: 1px;
-  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
-  padding: 0 35px;
+.form {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding-top: 40px;
   transition: 0.5s;
 }
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.form__title {
+  font-size: 3.6rem;
 }
-.swiper-container {
-  position: absolute;
+.form__subtitle {
+  max-width: 550px;
+  margin: 30px auto 0;
+  font-size: 1.8rem;
+  line-height: 1.2em;
+}
+.form .form__input {
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 27px;
+  padding: 13px 25px;
+  font-size: 1.8rem;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 20px auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+.form .form__input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+.form .form__input--name {
+  margin-top: 40px;
+}
+.form__btn {
+  font-family: "Pacifico", cursive;
+  display: inline-block;
+  margin: 35px auto 20px;
+  outline: none;
+  padding: 0 25px;
+  font-size: 2.2rem;
+  line-height: 1.9em;
+  border-radius: 1em;
+  background: #fff;
+  border: 2px solid #000;
+  letter-spacing: 2px;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+.form__btn:hover {
+  background: black;
+  border-color: #fff;
+  color: #fff;
+}
+
+.form-background {
+  width: 0;
+  height: 0;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  height: 100vh !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
-  line-height: 15px;
-  background-color: #fff;
-  opacity: 0.6;
-  position: relative;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #fff;
-  opacity: 1;
-}
-
-.where {
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-}
-.where__back {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 150%;
-  background: linear-gradient(transparent 98%, #fff 98%), linear-gradient(165deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8));
-}
-
-.container--where {
-  position: relative;
-}
-
-.where__title {
-  font-size: 4.8rem;
-  margin-top: 115px;
-}
-
-.where__subtitle {
-  font-size: 2rem;
-  max-width: 700px;
-  line-height: 1.5em;
-  margin-top: 55px;
-  position: relative;
-}
-
-.where__geo {
-  margin: 35px -25px;
-  display: flex;
-}
-
-.block {
-  display: inline-block;
-  width: 100%;
-  max-width: 350px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  padding: 15px;
-  position: relative;
-  z-index: 5;
-  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
-  margin: 0 25px;
-  transition: 0.2s;
-  bottom: 0;
-}
-.block .block__img {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  position: relative;
-  left: 0;
-  transition: 0.2s;
-}
-.block .block__img .img {
-  width: 48%;
-  height: 100px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
-}
-.block .block__img .img--2 {
-  margin-top: 15px;
-}
-.block .block__subtitle {
-  font-size: 1.8rem;
-  color: #000;
-  margin: 20px 0 10px;
-  text-align: center;
-}
-.block .block__subtitle .icon {
-  margin-right: 0.6rem;
-  color: #f03f3f;
-}
-
-.where__img {
-  max-width: 285px;
-  position: absolute;
-  top: -10px;
-  left: -40%;
-  opacity: 0;
-}
-
-.wrapper--img {
-  position: relative;
-  height: 150px;
-}
-.wrapper--img::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 350px;
-  background-color: #fff;
-  top: 99%;
-  left: 0;
-}
-.wrapper--img img {
-  height: 100%;
-}
-
-.contacts {
-  color: #000;
-  text-align: end;
-  padding-top: 75px;
-}
-
-.contacts__title {
-  font-size: 4.8rem;
-}
-
-.contacts__subtitle {
-  font-size: 2rem;
-  line-height: 1.5em;
-  margin: 50px 0 30px;
-}
-
-.red {
-  color: #c03232;
+  z-index: 80;
   transition: 0.3s;
 }
-
-@media screen and (max-width: 991px) {
-  .where__title {
-    margin-top: 75px;
-  }
-
-  .where__subtitle {
-    margin-top: 40px;
-  }
-
-  .where__img {
-    display: none;
-  }
-
-  .swiper-slide--1,
-.swiper-slide--2 {
-    display: none;
-  }
-
-  .where__geo {
-    flex-direction: column;
-    align-items: center;
-    margin: 35px 0;
-  }
-
-  .block {
-    margin: 0;
-  }
-  .block:not(:first-child) {
-    margin-top: 20px;
-  }
+.form-background.active {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
 }
-@media screen and (min-width: 1240px) {
-  .welcome__btn:hover {
-    background: black;
-    border-color: #fff;
-    color: #fff;
-  }
 
-  .block:hover {
-    bottom: 10px;
-    box-shadow: 0px 7px 6px 1px rgba(0, 0, 0, 0.3);
-  }
-  .block:hover .block__img {
-    left: 20px;
-  }
-
-  .red:hover {
-    text-shadow: 0 0 10px #c03232, 0 0 20px #c03232, 0 0 40px #c03232;
-    color: #000;
-  }
+.close__trait {
+  top: 45%;
+  right: -16%;
+  background-color: #000;
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  border-radius: 1px;
 }
-@media screen and (max-width: 1240px) {
-  .welcome__btn:active {
-    background: black;
-    border-color: #fff;
-    color: #fff;
-  }
 
-  .block:active {
-    bottom: 10px;
-    box-shadow: 0px 7px 6px 1px rgba(0, 0, 0, 0.3);
-  }
-
-  .red:active {
-    text-shadow: 0 0 10px #c03232, 0 0 20px #c03232, 0 0 40px #c03232;
-    color: #000;
+@media screen and (max-width: 480px) {
+  .form__title {
+    margin-top: 15px;
   }
 }
 .header {
@@ -724,13 +532,3 @@
 }
 /* Portrait phones and smaller */
 /* Iphone 5 */
-@keyframes imgPara {
-  0% {
-    left: -40%;
-    opacity: 0;
-  }
-  100% {
-    left: 72%;
-    opacity: 1;
-  }
-}
