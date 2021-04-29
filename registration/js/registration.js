@@ -31,6 +31,12 @@ $(document).ready(function () {
           error++;
         }
       }
+      if(input.classList.contains('_name')) {
+        if(nameTest(input)) {
+          formAddError(input);
+          error++;
+        }
+      }
     }
     return error;
   }
@@ -45,5 +51,8 @@ $(document).ready(function () {
   }
   function phoneTest(input) {
     return !/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(input.value);
+  }
+  function nameTest(input) {
+    return !/^([A-zА-яЁё]+\s?)+$/.test(input.value);
   }
 });
